@@ -2,7 +2,12 @@
 
 > Locations are the main data element in the Interactive River digital experience. 
 
+
 Each Location will show on the map as a marker which, when clicked, will open a sidebar to display the full content of the Location. Along with information about the site and it's history, a Location may be accompanied by multimedia attachments such as image and artifact galleries, audio recordings, and videos. Each Location may also include links to other related Locations.
+
+<p align="center">
+<img src="./assets/full-screen-location-min.jpg" width="658" />
+</p>
 
 <h2>Data Entry</h2>
 
@@ -179,6 +184,7 @@ Pick from one of the six combinations of the preset date periods.
 If one of the date periods is selected, any custom date display data will be ignored.
 
 > When a date period has been selected, clicking the link icon next to the period's title will open the page to edit the selected period. To switch periods, click the "Link item" button below the period's title (see image below).  
+
 > **NOTE**: Only users with **ADMIN** privileges can save changes to the Date Period entries.
 
 See also: [`Custom Date Range`](#custom-date-range), [`Custom Range Display`](#custom-range-display)
@@ -378,6 +384,8 @@ Each `Related Points` item has the following fields:
 `Location` is a link to the related Location in the CMS database.
 
 `Description` will show beneath the Location's title in the sidebar.
+
+<img src="./assets/related.jpg" width="1008" />
 
 ---
 <br>
