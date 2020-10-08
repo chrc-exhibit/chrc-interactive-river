@@ -5,6 +5,7 @@
 - [Locations](#locations)
 	- [Data Entry](#data-entry)
 		- [Title](#title)
+		- [Formatted Title](#formatted-title)
 		- [Subtitle](#subtitle)
 		- [Category](#category)
 		- [Borden Number](#borden-number)
@@ -18,6 +19,7 @@
 		- [Featured Image](#featured-image)
 		- [Gallery](#gallery)
 		- [Artifacts](#artifacts)
+		- [Artifacts](#artifacts-1)
 
 ## Data Entry
 
@@ -30,9 +32,28 @@
 | ---------- | -------- |
 | plain text | yes      |
 
-> The title is a required field, along with location & category.
+> The Title is a required field, along with Location & Category.
 
 <img src="./assets/title.jpg" width="677" />
+
+---
+<br>
+
+<a name="title_formatted"></a>
+
+### Formatted Title
+
+| Sub-field | Input Type | Required |
+| --------- | ---------- | -------- |
+| On/Off    | toggle     | no       |
+| HTML text      | plain-text | no       |
+
+Along with the Title, there is an optional Formatted Title for advanced users. This field allows you to directly enter the exact HTML for the title in the sidebar.
+
+- If either the toggle is "Off" or the HTML text field is empty, the unformatted plain text Title will be used instead.
+- Formatted Title is only used in the header of the sidebar, any other occurrences of the Location's title will use the unformatted plain text Title.
+
+<img src="./assets/title_formatted.png" width="763" />
 
 ---
 <br>
@@ -257,6 +278,43 @@ Image File is the full-size image for the gallery item.
 Title/Caption and Attribution are simple text fields, and are only visible in the gallery view.
 
 <img src="./assets/gallery-fields.jpg" width="1020" />
+
+---
+<br>
+
+<a name="artifacts"></a>
+
+### Artifacts
+
+| Input Type | Required |
+| ---------- | -------- |
+| repeater   | no       |
+
+Artifacts is a repeater field for a gallery of artifacts, allowing the selection and configuration of multiple artifact gallery items. Artifact items are visible as a thumbnail preview in the sidebar and in a fullscreen image gallery view, activated by clcking/tapping on the thumbnail preview.
+
+Each artifact gallery item has the following fields:
+
+| Sub-field   | Input Type  | Required |
+| ----------- | ----------- | -------- |
+| Image       | image asset | yes      |
+| Title       | plain text  | no       |
+| Description | plain text  | no       |
+
+Image File is the full-size image for the gallery item. 
+
+Much like the Gallery:
+
+* Most images should ideally be between 1280x720 and 1920x1080 pixels. 
+* The gallery view allows for zooming and panning very large images (eg. 1920x1080 pixels and larger), but be mindful that larger image files will take longer to download and load when using the client app. 
+* A 425x200 pixel thumbnail will be automatically generated for the sidebar.
+
+Unlike the Gallery:
+
+* The Artifact gallery view has a white background instead of black, and artifact images are expected to have either white or tranparent backgrounds.
+
+Title and Description are simple text fields, and are only visible in the gallery view.
+
+<img src="./assets/artifacts-fields.jpg" width="1020" />
 
 ---
 <br>
