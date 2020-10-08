@@ -1,28 +1,27 @@
-# Locations
+<h1>Locations</h1>
 
-> intro
+> Locations are the main data element in the Interactive River digital experience. 
 
-- [Locations](#locations)
-	- [Data Entry](#data-entry)
-		- [Title](#title)
-		- [Formatted Title](#formatted-title)
-		- [Subtitle](#subtitle)
-		- [Category](#category)
-		- [Borden Number](#borden-number)
-		- [Content](#content)
-		- [Location](#location)
-		- [Active Dates](#active-dates)
-			- [Show dates](#show-dates)
-			- [Preset Period(s)](#preset-periods)
-			- [Custom Date Range](#custom-date-range)
-			- [Custom Range Display](#custom-range-display)
-		- [Featured Image](#featured-image)
-		- [Gallery](#gallery)
-		- [Artifacts](#artifacts)
-		- [Artifacts](#artifacts-1)
+Each Location will show on the map as a marker which, when clicked, will open a sidebar to display the full content of the Location. Along with information about the Location and it's history, a Location may be accompanied by multimedia attachments such as image and artifact galleries, audio recordings, and videos. Each Location may also include links to other related Locations.
 
-## Data Entry
+<h2>Data Entry</h2>
 
+- [Title](#title)
+- [Formatted Title](#formatted-title)
+- [Subtitle](#subtitle)
+- [Category](#category)
+- [Borden Number](#borden-number)
+- [Content](#content)
+- [Location](#location)
+- [Active Dates](#active-dates)
+	- [Show dates](#show-dates)
+	- [Preset Period(s)](#preset-periods)
+	- [Custom Date Range](#custom-date-range)
+	- [Custom Range Display](#custom-range-display)
+- [Featured Image](#featured-image)
+- [Gallery](#gallery)
+- [`Artifacts`](#artifacts)
+- [Audio](#audio)
 
 <a name="title"></a>
 
@@ -46,7 +45,7 @@
 | Sub-field | Input Type | Required |
 | --------- | ---------- | -------- |
 | On/Off    | toggle     | no       |
-| HTML text      | plain-text | no       |
+| HTML text | plain-text | no       |
 
 Along with the Title, there is an optional Formatted Title for advanced users. This field allows you to directly enter the exact HTML for the title in the sidebar.
 
@@ -284,35 +283,35 @@ Title/Caption and Attribution are simple text fields, and are only visible in th
 
 <a name="artifacts"></a>
 
-### Artifacts
+### `Artifacts`
 
 | Input Type | Required |
 | ---------- | -------- |
 | repeater   | no       |
 
-Artifacts is a repeater field for a gallery of artifacts, allowing the selection and configuration of multiple artifact gallery items. Artifact items are visible as a thumbnail preview in the sidebar and in a fullscreen image gallery view, activated by clcking/tapping on the thumbnail preview.
+`Artifacts` is a repeater field for a gallery of artifacts, allowing the selection and configuration of multiple artifact gallery items. Artifact items are visible as a thumbnail preview in the sidebar and in a fullscreen image gallery view, activated by clcking/tapping on the thumbnail preview.
 
 Each artifact gallery item has the following fields:
 
 | Sub-field   | Input Type  | Required |
 | ----------- | ----------- | -------- |
-| Image       | image asset | yes      |
-| Title       | plain text  | no       |
-| Description | plain text  | no       |
+| `Image`       | image asset | yes      |
+| `Title`       | plain text  | no       |
+| `Description` | plain text  | no       |
 
-Image File is the full-size image for the gallery item. 
+`Image` is the full-size image for the gallery item. 
 
-Much like the Gallery:
+Much like the `Gallery`:
 
 * Most images should ideally be between 1280x720 and 1920x1080 pixels. 
 * The gallery view allows for zooming and panning very large images (eg. 1920x1080 pixels and larger), but be mindful that larger image files will take longer to download and load when using the client app. 
 * A 425x200 pixel thumbnail will be automatically generated for the sidebar.
 
-Unlike the Gallery:
+Unlike the `Gallery`:
 
-* The Artifact gallery view has a white background instead of black, and artifact images are expected to have either white or tranparent backgrounds.
+* The `Artifacts` gallery view has a white background instead of black, and artifact images are expected to have either white or tranparent backgrounds.
 
-Title and Description are simple text fields, and are only visible in the gallery view.
+`Title` and `Description` are simple text fields, and are only visible in the gallery view.
 
 <img src="./assets/artifacts-fields.jpg" width="1020" />
 
@@ -321,35 +320,35 @@ Title and Description are simple text fields, and are only visible in the galler
 
 <a name="artifacts"></a>
 
-### Artifacts
+### Audio
 
 | Input Type | Required |
 | ---------- | -------- |
 | repeater   | no       |
 
-Artifacts is a repeater field for a gallery of artifacts, allowing the selection and configuration of multiple artifact gallery items. Artifact items are visible as a thumbnail preview in the sidebar and in a fullscreen image gallery view, activated by clcking/tapping on the thumbnail preview.
+Audio is a repeater field for a gallery of artifacts, allowing the selection and configuration of multiple artifact gallery items. Artifact items are visible as a thumbnail preview in the sidebar and in a fullscreen image gallery view, activated by clcking/tapping on the thumbnail preview.
 
 Each artifact gallery item has the following fields:
 
 | Sub-field   | Input Type  | Required |
 | ----------- | ----------- | -------- |
-| Image       | image asset | yes      |
-| Title       | plain text  | no       |
-| Description | plain text  | no       |
+| `Image`       | image asset | yes      |
+| `Title`       | plain text  | no       |
+| `Description` | plain text  | no       |
 
-Image File is the full-size image for the gallery item. 
+`Image` is the full-size image for the gallery item. 
 
-Much like the Gallery:
+Much like the `Gallery`:
 
 * Most images should ideally be between 1280x720 and 1920x1080 pixels. 
 * The gallery view allows for zooming and panning very large images (eg. 1920x1080 pixels and larger), but be mindful that larger image files will take longer to download and load when using the client app. 
 * A 425x200 pixel thumbnail will be automatically generated for the sidebar.
 
-Unlike the Gallery:
+Unlike the `Gallery`:
 
-* The Artifact gallery view has a white background instead of black, and artifact images are expected to have either white or tranparent backgrounds.
+* The `Artifacts` gallery view has a white background instead of black, and artifact images are expected to have either white or tranparent backgrounds.
 
-Title and Description are simple text fields, and are only visible in the gallery view.
+`Title` and `Description` are simple text fields, and are only visible in the gallery view.
 
 <img src="./assets/artifacts-fields.jpg" width="1020" />
 
