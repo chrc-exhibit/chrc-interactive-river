@@ -2,7 +2,7 @@
 
 > Locations are the main data element in the Interactive River digital experience. 
 
-Each Location will show on the map as a marker which, when clicked, will open a sidebar to display the full content of the Location. Along with information about the Location and it's history, a Location may be accompanied by multimedia attachments such as image and artifact galleries, audio recordings, and videos. Each Location may also include links to other related Locations.
+Each Location will show on the map as a marker which, when clicked, will open a sidebar to display the full content of the Location. Along with information about the site and it's history, a Location may be accompanied by multimedia attachments such as image and artifact galleries, audio recordings, and videos. Each Location may also include links to other related Locations.
 
 <h2>Data Entry</h2>
 
@@ -20,10 +20,10 @@ Each Location will show on the map as a marker which, when clicked, will open a 
 	- [Custom Range Display](#custom-range-display)
 - [Featured Image](#featured-image)
 - [Gallery](#gallery)
-- [`Artifacts`](#artifacts)
+- [Artifacts](#artifacts)
 - [Audio](#audio)
-
-<a name="title"></a>
+- [Video](#video)
+- [Related Points](#related-points)
 
 ### Title
 
@@ -31,33 +31,29 @@ Each Location will show on the map as a marker which, when clicked, will open a 
 | ---------- | -------- |
 | plain text | yes      |
 
-> The Title is a required field, along with Location & Category.
+`Title` is a required field, along with `Location` & `Category`.
 
 <img src="./assets/title.jpg" width="677" />
 
 ---
 <br>
 
-<a name="title_formatted"></a>
-
 ### Formatted Title
 
-| Sub-field | Input Type | Required |
-| --------- | ---------- | -------- |
-| On/Off    | toggle     | no       |
-| HTML text | plain-text | no       |
+| Sub-field   | Input Type | Required |
+| ----------- | ---------- | -------- |
+| `On/Off`    | toggle     | no       |
+| `HTML text` | plain-text | no       |
 
-Along with the Title, there is an optional Formatted Title for advanced users. This field allows you to directly enter the exact HTML for the title in the sidebar.
+Along with the `Title`, there is an optional `Formatted Title` for advanced users. This field allows you to directly enter the exact HTML for the title in the sidebar.
 
-- If either the toggle is "Off" or the HTML text field is empty, the unformatted plain text Title will be used instead.
-- Formatted Title is only used in the header of the sidebar, any other occurrences of the Location's title will use the unformatted plain text Title.
+- If either the toggle is "Off" or the HTML text field is empty, the unformatted plain text `Title` will be used instead.
+- `Formatted Title` is only used in the header of the sidebar, any other occurrences of the location's title will use the unformatted plain text `Title`.
 
 <img src="./assets/title_formatted.png" width="763" />
 
 ---
 <br>
-
-<a name="subtitle"></a>
 
 ### Subtitle
 
@@ -74,8 +70,6 @@ An optional subtitle.
 ---
 <br>
 
-<a name="category"></a>
-
 ### Category
 
 | Input Type   | Required |
@@ -86,7 +80,7 @@ Pick from one of the five available categories.
 
 As well as determining the location's icon on the map, the selected category's title is displayed above the location title.
 
-The category is a required field, along with title & location.
+`Category` is a required field, along with `Title` & `Location`.
 
 > When a category has been selected, clicking the link icon next to the category's title will open the page to edit the selected category. To switch categories, click the "Link item" button below the category's title (see image below).
 
@@ -94,8 +88,6 @@ The category is a required field, along with title & location.
 
 ---
 <br>
-
-<a name="borden-number"></a>
 
 ### Borden Number
 
@@ -111,8 +103,6 @@ This data is not actually displayed anywhere in the client app, but does allow e
 
 ---
 <br>
-
-<a name="content"></a>
 
 ### Content
 
@@ -139,15 +129,13 @@ Many of the locations have a specially formatted blockquote. To use this quote f
 ---
 <br>
 
-<a name="location"></a>
-
 ### Location
 
 | Input Type | Required |
 | ---------- | -------- |
 | location   | yes      |
 
-The location is a required field, along with title & category. Enter a street address or city name, latitude & longitude coordinates, or drag the marker to the desired location.
+The `Location` is a required field, along with `Title` & `Category`. Enter a street address or city name, latitude & longitude coordinates, or drag the marker to the desired location.
 
 <p align="center">
 <img src="./assets/map-drag-drop.gif" width="640" alt="Demonstration of how to manually reposition the location marker."/>
@@ -158,15 +146,16 @@ The location is a required field, along with title & category. Enter a street ad
 ---
 <br>
 
-<a name="active-dates"></a>
-
 ### Active Dates
-
-There are a number of fields associated with setting & configuring the dates for a given location.
 
 A location's date period/range will show in the sidebar as well highlight a section of the timeline.
 
-<a name="show-dates"></a>
+There are a number of fields associated with setting & configuring the dates for a given location:
+
+- [`Show dates`](#show-dates)
+- [`Preset Period(s)`](#preset-periods)
+- [`Custom Date Range`](#custom-date-range)
+- [`Custom Range Display`](#custom-range-display)
 
 #### Show dates
 
@@ -179,8 +168,6 @@ Whether to show the location date in the sidebar & timeline of the client app. A
 <img src="./assets/date_toggle.png" width="447" />
 <br>
 
-<a name="preset-periods"></a>
-
 #### Preset Period(s)
 
 | Input Type   | Required |
@@ -192,29 +179,31 @@ Pick from one of the six combinations of the preset date periods.
 If one of the date periods is selected, any custom date display data will be ignored.
 
 > When a date period has been selected, clicking the link icon next to the period's title will open the page to edit the selected period. To switch periods, click the "Link item" button below the period's title (see image below).  
-> **NOTE**: Only users with `ADMIN` privileges can save changes to the Date Period entries.
+> **NOTE**: Only users with **ADMIN** privileges can save changes to the Date Period entries.
+
+See also: [`Custom Date Range`](#custom-date-range), [`Custom Range Display`](#custom-range-display)
+
 
 <img src="./assets/preset-periods.jpg" width="960" />
 <br>
 
-<a name="custom-range"></a>
-
 #### Custom Date Range
 
-| Sub-field  | Input Type | Required |
-| ---------- | ---------- | -------- |
-| Start Year | number     | no       |
-| End Year   | number     | no       |
+| Sub-field    | Input Type | Required |
+| ------------ | ---------- | -------- |
+| `Start Year` | number     | no       |
+| `End Year`   | number     | no       |
 
 Set a custom date range for this entry.
 
-* The start- and end-year fields will dictate the highlighted section of the timeline, and will be displayed in the sidebar (unless the custom range display is set).
-* Use negative numbers for years BCE (before year 0). Must be between `-10000` and `2020`. If either field is left blank, it will default to `0`. For a single year, enter that same year as both start and end years.
+* The `Start Year` and `End Year` fields will dictate the highlighted section of the timeline, and will be displayed in the sidebar (unless the `Custom Range Display` is set).
+* Use negative numbers for years BCE (before year 0). Must be between -10000 and 2020. If either field is left blank, it will default to 0. For a single year, enter that same year as both start and end years.
+* If `Preset Period(s)` is set, this data will be ignored.
+
+See also: [`Custom Range Display`](#custom-range-display), [`Preset Period(s)`](#preset-periods)
 
 <img src="./assets/custom-range.jpg" width="960" />
 <br>
-
-<a name="custom-display"></a>
 
 #### Custom Range Display
 
@@ -224,12 +213,15 @@ Set a custom date range for this entry.
 
 Set custom date text in the sidebar for this entry.
 
+* Overrides the auto-generated text from `Custom Date Range`.
+* If `Preset Period(s)` is set, this data will be ignored.
+
+See also: [`Custom Date Range`](#custom-date-range), [`Preset Period(s)`](#preset-periods)
+
 <img src="./assets/custom-range-display.jpg" width="960" />
 
 ---
 <br>
-
-<a name="featured-image"></a>
 
 ### Featured Image
 
@@ -248,53 +240,49 @@ Set a featured header image for the sidebar.
 ---
 <br>
 
-<a name="gallery"></a>
-
 ### Gallery
 
 | Input Type | Required |
 | ---------- | -------- |
 | repeater   | no       |
 
-The gallery is a repeater field, allowing the selection and configuration of multiple gallery items. Gallery items are visible as a thumbnail preview in the sidebar and in a fullscreen image gallery view, activated by clcking/tapping on the thumbnail preview.
+The `Gallery` is a repeater field, allowing the selection and configuration of multiple gallery items. Items are visible as a preview slideshow of thumbnails in the sidebar which - when clicked - opens a fullscreen image gallery view, allowing users to navigate through the full gallery.
 
 <img src="./assets/gallery.jpg" width="874" />
 
-Each gallery item has the following fields:
+Each `Gallery` item has the following fields:
 
-| Sub-field     | Input Type  | Required |
-| ------------- | ----------- | -------- |
-| Image File    | image asset | yes      |
-| Title/Caption | plain text  | no       |
-| Attribution   | plain text  | no       |
+| Sub-field       | Input Type  | Required |
+| --------------- | ----------- | -------- |
+| `Image File`    | image asset | yes      |
+| `Title/Caption` | plain text  | no       |
+| `Attribution`   | plain text  | no       |
 
-Image File is the full-size image for the gallery item. 
+`Image File` is the full-size image for the gallery item. 
 
 * Most images should ideally be between 1280x720 and 1920x1080 pixels. 
 * The gallery view allows for zooming and panning very large images (eg. 1920x1080 pixels and larger), but be mindful that larger image files will take longer to download and load when using the client app. 
 * A 425x200 pixel thumbnail will be automatically generated for the sidebar.
 
-Title/Caption and Attribution are simple text fields, and are only visible in the gallery view.
+`Title/Caption` and `Attribution` are simple text fields, and are only visible in the gallery view.
 
 <img src="./assets/gallery-fields.jpg" width="1020" />
 
 ---
 <br>
 
-<a name="artifacts"></a>
-
-### `Artifacts`
+### Artifacts
 
 | Input Type | Required |
 | ---------- | -------- |
 | repeater   | no       |
 
-`Artifacts` is a repeater field for a gallery of artifacts, allowing the selection and configuration of multiple artifact gallery items. Artifact items are visible as a thumbnail preview in the sidebar and in a fullscreen image gallery view, activated by clcking/tapping on the thumbnail preview.
+`Artifacts` is a repeater field for a gallery of artifacts, allowing the selection and configuration of multiple artifact gallery items. Items are visible as a preview slideshow of thumbnails in the sidebar which - when clicked - opens a fullscreen image gallery view, allowing users to navigate through the full gallery.
 
-Each artifact gallery item has the following fields:
+Each `Artifacts` item has the following fields:
 
-| Sub-field   | Input Type  | Required |
-| ----------- | ----------- | -------- |
+| Sub-field     | Input Type  | Required |
+| ------------- | ----------- | -------- |
 | `Image`       | image asset | yes      |
 | `Title`       | plain text  | no       |
 | `Description` | plain text  | no       |
@@ -317,8 +305,6 @@ Unlike the `Gallery`:
 
 ---
 <br>
-
-<a name="artifacts"></a>
 
 ### Audio
 
@@ -326,31 +312,72 @@ Unlike the `Gallery`:
 | ---------- | -------- |
 | repeater   | no       |
 
-Audio is a repeater field for a gallery of artifacts, allowing the selection and configuration of multiple artifact gallery items. Artifact items are visible as a thumbnail preview in the sidebar and in a fullscreen image gallery view, activated by clcking/tapping on the thumbnail preview.
+`Audio` is a repeater field for attaching audio recordings to a location. Unlike `Gallery` and `Artifacts`, `Audio` items are not aggregated in the sidebar; instead each item shows its title, attribution, and thumbnail in the sidebar. When clicked, an audio player will open at the top of the sidebar and begin playing the audio file.
 
-Each artifact gallery item has the following fields:
+Each `Audio` item has the following fields:
 
-| Sub-field   | Input Type  | Required |
-| ----------- | ----------- | -------- |
-| `Image`       | image asset | yes      |
+| Sub-field     | Input Type  | Required |
+| ------------- | ----------- | -------- |
+| `Audio File`  | audio asset | yes      |
+| `Thumbnail`   | image asset | yes      |
 | `Title`       | plain text  | no       |
-| `Description` | plain text  | no       |
+| `Attribution` | plain text  | no       |
 
-`Image` is the full-size image for the gallery item. 
+`Audio File` is the actual audio file of the item. MP3 is the preferred format for balancing quality and file size. Audio items that do not have an audio file will be ignored.
 
-Much like the `Gallery`:
+`Thumbnail` is a 425x200 pixel image that shows in the sidebar. If the image supplied has different dimensions, it will be cropped and scaled to fit.
 
-* Most images should ideally be between 1280x720 and 1920x1080 pixels. 
-* The gallery view allows for zooming and panning very large images (eg. 1920x1080 pixels and larger), but be mindful that larger image files will take longer to download and load when using the client app. 
-* A 425x200 pixel thumbnail will be automatically generated for the sidebar.
+`Title` shows in the sidebar as well as the audio player. If `Title` is omitted, the filename of the `Audio File` will be used instead.
 
-Unlike the `Gallery`:
+`Attribution` is only displayed in the sidebar view.
 
-* The `Artifacts` gallery view has a white background instead of black, and artifact images are expected to have either white or tranparent backgrounds.
+---
+<br>
 
-`Title` and `Description` are simple text fields, and are only visible in the gallery view.
+### Video
 
-<img src="./assets/artifacts-fields.jpg" width="1020" />
+| Input Type | Required |
+| ---------- | -------- |
+| repeater   | no       |
+
+`Video` is a repeater field for attaching video recordings to a location. Like `Audio`, `Video` items are not aggregated in the sidebar; instead each item shows its title, attribution, and thumbnail in the sidebar. When clicked, a fullscreen video player will begin playing the video file.
+
+Each `Video` item has the following fields:
+
+| Sub-field     | Input Type  | Required |
+| ------------- | ----------- | -------- |
+| `Video File`  | video asset | yes      |
+| `Thumbnail`   | image asset | yes      |
+| `Title`       | plain text  | no       |
+| `Attribution` | plain text  | no       |
+
+`Video File` is the actual video file of the item. MP4 is the preferred format for balancing quality and file size, and should aim to be 1280x720 pixels (720p). Video items that do not have an video file will be ignored.
+
+`Thumbnail` is a 425x200 pixel image that shows in the sidebar. If the image supplied has different dimensions, it will be cropped and scaled to fit.
+
+`Title` and `Attribution` are only displayed in the sidebar view. If `Title` is omitted, the filename of the `Video File` will be used instead.
+
+---
+<br>
+
+### Related Points
+
+| Input Type | Required |
+| ---------- | -------- |
+| repeater   | no       |
+
+`Related Points` is a repeater field for related locations. Each related location will show its title and associated category icon, along with an optional (but recommended) description of the relationship between the two locations. When the icon is clicked, the map will recenter on the related location, and that location's marker will start a highlight animation.
+
+Each `Related Points` item has the following fields:
+
+| Sub-field     | Input Type   | Required |
+| ------------- | ------------ | -------- |
+| `Location`    | linked entry | yes      |
+| `Description` | plain text   | no       |
+
+`Location` is a link to the related Location in the CMS database.
+
+`Description` will show beneath the Location's title in the sidebar.
 
 ---
 <br>
