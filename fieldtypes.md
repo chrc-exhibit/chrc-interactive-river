@@ -46,7 +46,9 @@ For larger values, the multi-line text field can be resized by clicking and drag
 
 ## Toggle
 
-Toggle fields are used for boolean (true/false) data. By default, the field has either an "On" or "Off" label next to the switch, but can be configured to show a custom text label instead.
+Toggle fields are used for boolean (true/false) data. 
+
+By default, the field has either an "On" or "Off" label next to the switch, but can be configured to show a custom text label instead.
 
 <figure align="center">
 <img src="./assets/toggle.jpg" width="672">
@@ -58,7 +60,7 @@ Toggle fields are used for boolean (true/false) data. By default, the field has 
 
 ## Rich text
 
-The rich text field allows you to easily create styled and properly formatted HTML content. It uses the TinyMCE editor [(demo)](https://www.tiny.cloud/docs/demo/basic-example/).
+The rich text field allows you to easily create styled and properly formatted HTML content, with an experience similar to a word-processor.
 
 <figure align="center">
 <img src="./assets/rich-blockquote.gif" width="480" alt="Demonstration of how to style a blockquote"/>
