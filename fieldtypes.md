@@ -67,6 +67,15 @@ The rich text field allows you to easily create styled and properly formatted HT
 <figcaption><em>Using the rich text field to create a styled blockquote.</em></figcaption>
 </figure>
 
+<aside>
+This is some aside text
+
+</aside>
+
+> **NOTE**:
+> 
+> sdfgsdgfgsdf
+
 ---
 <br>
 
