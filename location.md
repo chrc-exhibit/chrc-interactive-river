@@ -5,9 +5,10 @@
 
 Each Location will show on the map as a marker which, when clicked, will open a sidebar to display the full content of the Location. Along with information about the site and it's history, a Location may be accompanied by multimedia attachments such as image and artifact galleries, audio recordings, and videos. Each Location may also include links to other related Locations.
 
-<p align="center">
+<figure align="center">
 <img src="./assets/full-screen-location-min.jpg" width="658" />
-</p>
+<figcaption><em></em></figcaption>
+</figure>
 
 <h2>Data Entry</h2>
 
@@ -38,7 +39,9 @@ Each Location will show on the map as a marker which, when clicked, will open a 
 
 `Title` is a required field, along with `Location` & `Category`.
 
+<figure align="center">
 <img src="./assets/title.jpg" width="677" />
+</figure>
 
 ---
 <br>
@@ -48,14 +51,16 @@ Each Location will show on the map as a marker which, when clicked, will open a 
 | Sub-field   | Input Type | Required |
 | ----------- | ---------- | -------- |
 | `On/Off`    | toggle     | no       |
-| `HTML text` | plain-text | no       |
+| `HTML text` | plain text | no       |
 
 Along with the `Title`, there is an optional `Formatted Title` for advanced users. This field allows you to directly enter the exact HTML for the title in the sidebar.
 
 - If either the toggle is "Off" or the HTML text field is empty, the unformatted plain text `Title` will be used instead.
 - `Formatted Title` is only used in the header of the sidebar, any other occurrences of the location's title will use the unformatted plain text `Title`.
 
-<img src="./assets/title_formatted.png" width="763" />
+<figure align="center">
+<img src="./assets/title_formatted.jpg" width="763" />
+</figure>
 
 ---
 <br>
@@ -68,9 +73,11 @@ Along with the `Title`, there is an optional `Formatted Title` for advanced user
 
 An optional subtitle.
 
-> The location subtitle actually appears above the title.
+> **NOTE**: The location subtitle actually appears above the title.
 
+<figure align="center">
 <img src="./assets/subtitle.jpg" width="677" />
+</figure>
 
 ---
 <br>
@@ -87,9 +94,11 @@ As well as determining the location's icon on the map, the selected category's t
 
 `Category` is a required field, along with `Title` & `Location`.
 
-> When a category has been selected, clicking the link icon next to the category's title will open the page to edit the selected category. To switch categories, click the "Link item" button below the category's title (see image below).
+> **NOTE**: When a category has been selected, clicking the link icon next to the category's title will open the page to edit the selected category. To switch categories, click the "Link item" button below the category's title (see image below).
 
+<figure align="center">
 <img src="./assets/category.jpg" width="677" />
+</figure>
 
 ---
 <br>
@@ -104,7 +113,9 @@ For archaeological sites, enter the site's Borden Number.
 
 This data is not actually displayed anywhere in the client app, but does allow editors to search for locations by Borden Number.
 
+<figure align="center">
 <img src="./assets/borden.jpg" width="600"/>
+</figure>
 
 ---
 <br>
@@ -117,9 +128,11 @@ This data is not actually displayed anywhere in the client app, but does allow e
 
 Body content for the location sidebar.
 
-> Some older entries may appear to have a larger font-size for the first paragraph when viewing in the rich-text editor. This is leftover from an earlier design and can be ignored.
+> **NOTE**: Some older entries may appear to have a larger font-size for the first paragraph when viewing in the rich-text editor. This is leftover from an earlier design and can be ignored.
 
+<figure align="center">
 <img src="./assets/content.jpg" width="960" />
+</figure>
 
 Many of the locations have a specially formatted blockquote. To use this quote format:
 
@@ -127,9 +140,10 @@ Many of the locations have a specially formatted blockquote. To use this quote f
 2. Apply blockquote formatting by selecting both quote and source, then opening the editor's "Formats" dropdown menu and selecting "Blockquote"
 3. If the quote is attributed, select the attribution and this time select "Blockquote Citation" from the "Formats" dropdown menu.
 
-<p align="center">
+<figure align="center">
 <img src="./assets/rich-blockquote.gif" width="480" alt="Demonstration of how to style a blockquote"/>
-</p>
+<figcaption><em>Using the rich text field to create a styled blockquote.</em></figcaption>
+</figure>
 
 ---
 <br>
@@ -142,11 +156,13 @@ Many of the locations have a specially formatted blockquote. To use this quote f
 
 The `Location` is a required field, along with `Title` & `Category`. Enter a street address or city name, latitude & longitude coordinates, or drag the marker to the desired location.
 
-<p align="center">
+<figure align="center">
 <img src="./assets/map-drag-drop.gif" width="640" alt="Demonstration of how to manually reposition the location marker."/>
-</p>
+<figcaption><em>Manually repositioning the location marker.</em></figcaption>
+</figure>
 
-> Editors manually typing in coordinates will run into problems with an over-aggressive autocomplete for coordinates. It is highly recommended to copy-and-paste in properly formatted coordinates
+
+> **NOTE**: Editors manually typing in coordinates will run into problems with an over-aggressive autocomplete for coordinates. It is highly recommended to copy-and-paste in properly formatted coordinates
 
 ---
 <br>
@@ -170,7 +186,10 @@ There are a number of fields associated with setting & configuring the dates for
 
 Whether to show the location date in the sidebar & timeline of the client app. Also controls whether the other date fields are shown in the editor.
 
+<figure align="center">
 <img src="./assets/date_toggle.png" width="447" />
+</figure>
+
 <br>
 
 #### Preset Period(s)
@@ -183,14 +202,16 @@ Pick from one of the six combinations of the preset date periods.
 
 If one of the date periods is selected, any custom date display data will be ignored.
 
-> When a date period has been selected, clicking the link icon next to the period's title will open the page to edit the selected period. To switch periods, click the "Link item" button below the period's title (see image below).  
+> **NOTE**: When a date period has been selected, clicking the link icon next to the period's title will open the page to edit the selected period. To switch periods, click the "Link item" button below the period's title (see image below).  
 
 > **NOTE**: Only users with **ADMIN** privileges can save changes to the Date Period entries.
 
 See also: [`Custom Date Range`](#custom-date-range), [`Custom Range Display`](#custom-range-display)
 
-
+<figure align="center">
 <img src="./assets/preset-periods.jpg" width="960" />
+</figure>
+
 <br>
 
 #### Custom Date Range
@@ -208,7 +229,10 @@ Set a custom date range for this entry.
 
 See also: [`Custom Range Display`](#custom-range-display), [`Preset Period(s)`](#preset-periods)
 
+<figure align="center">
 <img src="./assets/custom-range.jpg" width="960" />
+</figure>
+
 <br>
 
 #### Custom Range Display
@@ -224,7 +248,9 @@ Set custom date text in the sidebar for this entry.
 
 See also: [`Custom Date Range`](#custom-date-range), [`Preset Period(s)`](#preset-periods)
 
+<figure align="center">
 <img src="./assets/custom-range-display.jpg" width="960" />
+</figure>
 
 ---
 <br>
@@ -238,10 +264,12 @@ See also: [`Custom Date Range`](#custom-date-range), [`Preset Period(s)`](#prese
 Set a featured header image for the sidebar. 
 
 * Images should be 425x295 pixel JPEGs or PNGs.
-* Images larger than 425x295 and/or with a different aspect ratio will resized and cropped to fit.
+* Images larger than 425x295 and/or with a different aspect ratio will be resized and cropped to fit.
 * A decorative cutout is applied to the bottom edge of the image, so make sure there is no crucial information in the bottom corners of the image.
 
+<figure align="center">
 <img src="./assets/featured-image.jpg" width="959" />
+</figure>
 
 ---
 <br>
@@ -254,7 +282,9 @@ Set a featured header image for the sidebar.
 
 The `Gallery` is a repeater field, allowing the selection and configuration of multiple gallery items. Items are visible as a preview slideshow of thumbnails in the sidebar which - when clicked - opens a fullscreen image gallery view, allowing users to navigate through the full gallery.
 
+<figure align="center">
 <img src="./assets/gallery.jpg" width="874" />
+</figure>
 
 Each `Gallery` item has the following fields:
 
@@ -272,7 +302,9 @@ Each `Gallery` item has the following fields:
 
 `Title/Caption` and `Attribution` are simple text fields, and are only visible in the gallery view.
 
+<figure align="center">
 <img src="./assets/gallery-fields.jpg" width="1020" />
+</figure>
 
 ---
 <br>
@@ -307,7 +339,10 @@ Unlike the `Gallery`:
 
 `Title` and `Description` are simple text fields, and are only visible in the gallery view.
 
+<figure align="center">
 <img src="./assets/artifacts-fields.jpg" width="1020" />
+</figure>
+
 
 ---
 <br>
@@ -385,7 +420,9 @@ Each `Related Points` item has the following fields:
 
 `Description` will show beneath the Location's title in the sidebar.
 
+<figure align="center">
 <img src="./assets/related.jpg" width="1008" />
+</figure>
 
 ---
 <br>
