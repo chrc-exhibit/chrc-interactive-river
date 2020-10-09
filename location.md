@@ -128,7 +128,7 @@ This data is not actually displayed anywhere in the client app, but does allow e
 
 Body content for the location sidebar.
 
-> **NOTE**: Some older entries may appear to have a larger font-size for the first paragraph when viewing in the rich-text editor. This is leftover from an earlier design and can be ignored.
+> **NOTE**: Some older entries may appear to have a larger font-size for the first paragraph when viewing in the rich-text editor. This is left-over from an earlier design and can be ignored.
 
 <figure align="center">
 <img src="./assets/content.jpg" width="960" />
@@ -161,7 +161,6 @@ The `Location` is a required field, along with `Title` & `Category`. Enter a str
 <img src="./assets/map-drag-drop.gif" width="640" alt="Demonstration of how to manually reposition the location marker."/>
 <figcaption><em>Manually repositioning the location marker.</em></figcaption>
 </figure>
-
 
 > **NOTE**: Editors manually typing in coordinates will run into problems with an over-aggressive autocomplete for coordinates. It is highly recommended to copy-and-paste in properly formatted coordinates
 
@@ -367,7 +366,7 @@ Each `Audio` item has the following fields:
 
 `Audio File` is the actual audio file of the item. MP3 is the preferred format for balancing quality and file size. Audio items that do not have an audio file will be ignored.
 
-`Thumbnail` is a 425x200 pixel image that shows in the sidebar. If the image supplied has different dimensions, it will be cropped and scaled to fit.
+`Thumbnail` is a 425x200 pixel image that shows in the sidebar. If the image chosen has different dimensions, it will be cropped and scaled to fit.
 
 `Title` shows in the sidebar as well as the audio player. If `Title` is omitted, the filename of the `Audio File` will be used instead.
 
@@ -395,7 +394,7 @@ Each `Video` item has the following fields:
 
 `Video File` is the actual video file of the item. MP4 is the preferred format for balancing quality and file size, and should aim to be 1280x720 pixels (720p). Video items that do not have an video file will be ignored.
 
-`Thumbnail` is a 425x200 pixel image that shows in the sidebar. If the image supplied has different dimensions, it will be cropped and scaled to fit.
+`Thumbnail` is a 425x200 pixel image that shows in the sidebar. If the image chosen has different dimensions, it will be cropped and scaled to fit.
 
 `Title` and `Attribution` are only displayed in the sidebar view. If `Title` is omitted, the filename of the `Video File` will be used instead.
 
