@@ -12,7 +12,7 @@
 
 <figure align="center">
 <img src="./assets/field-anatomy.jpg" width="924">
-<figcaption><em>Anatomy of a field</em></figcaption>
+<figcaption><em>Anatomy of a field.</em></figcaption>
 </figure>
 
 ---
@@ -20,7 +20,7 @@
 
 ## Plain text
 
-Plain text fields come in two different variants: single- and multi-line.
+Plain text fields are used for simple text data and come in two different variants: single- and multi-line.
 
 The single-line text field can be used to auto generate a "sluggified" version of the contents for use in URLs.
 
@@ -32,10 +32,8 @@ For larger values, the multi-line text field can be resized by clicking and drag
 </figure>
 
 <figure align="center">
-<img src="./assets/plain-text-multi.jpg" width="460
-">
+<img src="./assets/plain-text-multi.jpg" width="460">
 <figcaption><em>A multi-line plain text field</em></figcaption>
-
 </figure>
 
 ---
@@ -47,6 +45,13 @@ For larger values, the multi-line text field can be resized by clicking and drag
 <br>
 
 ## Toggle
+
+Toggle fields are used for boolean (true/false) data. By default, the field has either an "On" or "Off" label next to the switch, but can be configured to show a custom text label instead.
+
+<figure align="center">
+<img src="./assets/toggle.jpg" width="672">
+<figcaption><em>Examples of the toggle field in its <code>Off</code> and <code>On</code> states, as well with a custom label.</em></figcaption>
+</figure>
 
 ---
 <br>
