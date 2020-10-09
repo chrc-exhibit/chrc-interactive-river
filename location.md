@@ -132,6 +132,7 @@ Body content for the location sidebar.
 
 <figure align="center">
 <img src="./assets/content.jpg" width="960" />
+<figcaption><em></em></figcaption>
 </figure>
 
 Many of the locations have a specially formatted blockquote. To use this quote format:
